@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/layout"
+            android:layout_marginTop="22dp"
+            android:padding="3dp"
+            android:background="@drawable/ads_view_background"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/wallpaper1"
+                android:id="@+id/image"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        <WebView
+                android:layout_width="match_parent"
+                android:id="@+id/webView"
+                android:visibility="gone"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:background="@drawable/ads_view_background"
+            android:src="@android:drawable/ic_delete"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/closeBtn"
+            android:layout_height="20dp"/>
+
+</RelativeLayout>
