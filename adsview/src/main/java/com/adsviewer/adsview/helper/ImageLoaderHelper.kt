@@ -23,7 +23,7 @@ object ImageLoaderHelper {
         listener: RequestListener<Drawable>?
     ) {
 
-        var builder = GlideApp.with(context)
+        var builder = Glide.with(context)
             .load(imageUrl)
             .centerCrop()
             .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
@@ -42,7 +42,7 @@ object ImageLoaderHelper {
         imageResource: Int,
         listener: RequestListener<GifDrawable>?
     ) {
-        val builder = GlideApp.with(context)
+        val builder = Glide.with(context)
             .asGif()
             .load(imageResource)
             .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
@@ -58,7 +58,7 @@ object ImageLoaderHelper {
         imageUrl: String,
         listener: RequestListener<GifDrawable>?
     ) {
-        val builder = GlideApp.with(context)
+        val builder = Glide.with(context)
             .asGif()
             .load(imageUrl)
             .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
@@ -78,7 +78,7 @@ object ImageLoaderHelper {
 
     fun loadImageSync(context: Context, imageUrl: String): Drawable? {
         try {
-            return GlideApp.with(context)
+            return Glide.with(context)
                 .load(imageUrl)
                 .submit()
                 .get()
