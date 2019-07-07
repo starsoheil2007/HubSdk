@@ -2,30 +2,22 @@ package com.adsviewer.adsview
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
+import android.animation.ValueAnimator
 import android.annotation.SuppressLint
 import android.content.Context
-import android.util.AttributeSet
-import android.widget.RelativeLayout
-import android.content.res.TypedArray
+import android.graphics.drawable.Drawable
 import android.support.annotation.StyleableRes
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.AppCompatImageView
-import android.util.Log
+import android.util.AttributeSet
+import android.util.DisplayMetrics
 import android.view.MotionEvent
 import android.view.View
-import android.view.ViewOverlay
-import android.view.ViewGroup
-import android.animation.ValueAnimator
-import android.opengl.ETC1.getHeight
-import android.support.v7.app.AppCompatActivity
-import android.util.DisplayMetrics
 import android.view.animation.AccelerateDecelerateInterpolator
-import android.widget.LinearLayout
-import android.animation.ObjectAnimator
-import android.graphics.drawable.Drawable
-import android.transition.ChangeBounds
-import android.transition.TransitionSet
-import android.transition.TransitionManager
 import android.webkit.WebView
+import android.widget.LinearLayout
+import android.widget.RelativeLayout
+import com.adsviewer.adsview.helper.ImageLoaderHelper
 import com.adsviewer.adsview.models.AdsModel
 import com.adsviewer.adsview.models.AdsTimingModel
 import com.bumptech.glide.load.DataSource
@@ -33,7 +25,6 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.load.resource.gif.GifDrawable
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
-import com.relgram.app.app.library.ImageLoaderHelper
 
 
 class AdsLayout : RelativeLayout {

@@ -1,4 +1,4 @@
-package com.relgram.app.app.library
+package com.adsviewer.adsview.helper
 
 import com.bumptech.glide.annotation.GlideModule
 import com.bumptech.glide.module.AppGlideModule
@@ -8,5 +8,5 @@ import com.bumptech.glide.module.AppGlideModule
  *
  */
 @GlideModule
-class MyAppGlideModule : AppGlideModule() {
+class AdsViewerGlideModule : AppGlideModule() {
 }

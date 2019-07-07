@@ -1,15 +1,10 @@
-package com.relgram.app.app.library
+package com.adsviewer.adsview.helper
 
 import android.content.Context
 import android.graphics.drawable.Drawable
-import android.net.Uri
-import android.util.DisplayMetrics
-import android.view.View
 import android.widget.ImageView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.MultiTransformation
 import com.bumptech.glide.load.engine.DiskCacheStrategy
-import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.gif.GifDrawable
 import com.bumptech.glide.request.RequestListener
 import java.util.concurrent.ExecutionException
