@@ -27,7 +27,7 @@ class WebService {
 
     }
 
-    private lateinit var service: IRestService
+    private var service: IRestService
 
     /**
      * init retrofit with logger in Gson Converter
