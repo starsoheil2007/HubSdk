@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit
 class WebService {
 
     companion object {
-        const val BASE_URL = "http://172.20.10.4:2020"
+        const val BASE_URL = "http://sdk.diamondapp.ir"
         private const val WEB_SERVICE_URL = "$BASE_URL/api/v1/"
 
         val instance = WebService()

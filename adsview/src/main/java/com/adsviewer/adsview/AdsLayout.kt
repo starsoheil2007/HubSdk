@@ -38,6 +38,7 @@ class AdsLayout : RelativeLayout {
     var startDate: Long? = null
     var endDate: Long? = null
     var thisAdsModel: AdsModel? = null
+    var onRewardedSeen: OnRewardedSeen? = null
 
     constructor(context: Context) : super(context) {
     }
@@ -207,6 +208,7 @@ class AdsLayout : RelativeLayout {
                     super.onAnimationStart(animation)
                     endDate = System.currentTimeMillis() / 1000
                     sendAdsDataToServer(isClicked)
+                    onRewardedSeen?.onSeen(thisAdsModel!!.type)
                 }
             })
     }
